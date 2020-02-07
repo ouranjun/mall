@@ -1,9 +1,21 @@
 <template>
-  <div id="app">
+  <div id="app" class="g-container">
+    <div class="g-view-container">
     <router-view/>
+    </div>
+    <div class="g-footer-container">
+    <tab-bar/>
+    </div>
   </div>
 </template>
 
-<style>
+<script>
+import TabBar from 'common/tabbar'
 
-</style>
+export default {
+  name: 'App',
+  components: {
+    TabBar
+  }
+}
+</script>
